@@ -1,6 +1,8 @@
 function slugify(title) {
-  const slug = slugify;
-  return (slugParts = slug.split("-"));
+  const lowerCaseTitle = title.toLowerCase();
+  const words = lowerCaseTitle.split(" ");
+  const slug = words.join("-");
+  return slug;
 }
 
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
